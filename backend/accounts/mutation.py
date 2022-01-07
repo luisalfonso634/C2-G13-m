@@ -39,6 +39,7 @@ class RegisterClient(graphene.Mutation):
          user.save()
         # Create client
          client = Client(
+            user=user,
             country=user_data.get('country'),
             gender=user_data.get('gender'),
             phone=user_data.get('phone'),
@@ -78,6 +79,7 @@ class RegisterSysAdmin(graphene.Mutation):
          user.save()
         # Create sysadmin
          sysadmin = SysAdmin(
+            user=user,
             gender=user_data.get('gender'),
             phone=user_data.get('phone'),
          )
