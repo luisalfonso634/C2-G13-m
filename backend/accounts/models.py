@@ -1,7 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 # Create your models here.
-
+class Country(models.Model):
+    continent_name = models.CharField(max_length=25)
 class ExtendUser(AbstractUser):
     is_client = models.BooleanField('client status', default=False)
     is_sysadmin = models.BooleanField('sysadmin status', default=False)
