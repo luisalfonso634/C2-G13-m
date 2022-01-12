@@ -90,12 +90,14 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': env('DATABASE_NAME'),
-        'USER': env('DATABASE_USER'),
-        'PASSWORD': env('DATABASE_PASS'),
-        'HOST': env('HOST'),
-        'PORT': "",#env('PORT'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        #'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        #'NAME': env('DATABASE_NAME'),
+        #'USER': env('DATABASE_USER'),
+        #'PASSWORD': env('DATABASE_PASS'),
+        #'HOST': env('HOST'),
+        #'PORT': "",#env('PORT'),
     }
 }
 db_from_env = dj_database_url.config(conn_max_age=600)
