@@ -25,7 +25,7 @@ const Footer = () => {
             <br />
             <Link to="/" className="text-decoration-none text-black">Combos</Link>
             <br />
-            <Link to="/" className="text-decoration-none text-black">Publica tu Hotel con nosotros</Link>
+            <Link to="/publicatuhotel" className="text-decoration-none text-black">Publica tu Hotel con nosotros</Link>
           </ul>
         </div>
         <div className="col text-center">
