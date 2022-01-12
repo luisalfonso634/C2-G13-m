@@ -9,6 +9,10 @@ const Login = () => {
         <input type="password" className='form-control m-3' placeholder=" Contraseña"/>
       </form>
       <Link to="/perfilusuario"><button className="btn">Iniciar Sesión</button></Link>
+      <br/>
+     <Link to="/registro">
+     <p>No tienes cuenta? Registrate</p>
+     </Link> 
     </div>
   )
 }

@@ -4,6 +4,7 @@ import Footer from '../Common/Footer';
 import Home from '../Pages/Home';
 import Contacto from '../Pages/Contacto';
 import Login from '../Pages/Login';
+import Registro from '../Pages/Registro';
 
 const DashboardRouter = () => {
   return (
@@ -13,6 +14,7 @@ const DashboardRouter = () => {
       <Route path="/" element={<Home/>}/>
       <Route path="contacto" element={<Contacto/>}/>
       <Route path="login" element={<Login/>}/>
+      <Route path="registro" element={<Registro />}/>
     </Routes>
     <Footer/>
     </>
