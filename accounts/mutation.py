@@ -16,9 +16,6 @@ class RegisterClient(graphene.Mutation):
       name = graphene.String()
       surname = graphene.String()
       email = graphene.String()
-      country = graphene.String()
-      gender = graphene.String()
-      phone = graphene.String()
       password1 = graphene.String()
       password2 = graphene.String()
 
@@ -40,9 +37,6 @@ class RegisterClient(graphene.Mutation):
         # Create client
          client = Client(
             user=user,
-            country=user_data.get('country'),
-            gender=user_data.get('gender'),
-            phone=user_data.get('phone'),
          )
          client.save()
          return RegisterClient(client=client, user=user)
@@ -57,8 +51,6 @@ class RegisterSysAdmin(graphene.Mutation):
       name = graphene.String()
       surname = graphene.String()
       email = graphene.String()      
-      gender = graphene.String()
-      phone = graphene.String()
       password1 = graphene.String()
       password2 = graphene.String()
 
@@ -80,8 +72,6 @@ class RegisterSysAdmin(graphene.Mutation):
         # Create sysadmin
          sysadmin = SysAdmin(
             user=user,
-            gender=user_data.get('gender'),
-            phone=user_data.get('phone'),
          )
          sysadmin.save()
          return RegisterSysAdmin(sysadmin=sysadmin, user=user)
