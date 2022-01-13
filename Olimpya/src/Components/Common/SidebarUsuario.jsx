@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 const SidebarUsuario = () => {
   return (
@@ -7,7 +8,9 @@ const SidebarUsuario = () => {
               <li><i className="fas fa-star"></i> Favotiros</li>
               <li><i className="fas fa-address-card"></i> Perfil</li>
               <li><i className="fas fa-cogs"></i> Configuración</li>
+              <Link to="/" className="text-decoration-none text-white">
               <li><i className="fas fa-sign-out-alt"></i> Salir</li>
+              </Link>
           </ul>
     </div>
   )
