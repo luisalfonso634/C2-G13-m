@@ -6,6 +6,9 @@ import Contacto from '../Pages/Contacto';
 import Login from '../Pages/Login';
 import Registro from '../Pages/Registro';
 import PublicarTuHotel from '../Pages/PublicarTuHotel';
+import Alojamiento from '../Pages/Alojamiento';
+import Vuelos from '../Pages/Vuelos';
+import AtraccionesTuristicas from '../Pages/AtraccionesTuristicas';
 
 const DashboardRouter = () => {
   return (
@@ -17,6 +20,9 @@ const DashboardRouter = () => {
       <Route path="login" element={<Login/>}/>
       <Route path="registro" element={<Registro />}/>
       <Route path="publicatuhotel" element={<PublicarTuHotel />}/>
+      <Route path="alojamiento" element={<Alojamiento/>}/>
+      <Route path="vuelos" element={<Vuelos />}/>
+      <Route path="atracciones_turisticas" element={<AtraccionesTuristicas/>}/>
     </Routes>
     <Footer/>
     </>
