@@ -10,7 +10,7 @@
 ### Backend
 - Python
 - Django
-- PostgresSQL
+- PostgreSQL
 
 ## Como probarlo
 ...
