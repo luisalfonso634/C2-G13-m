@@ -4,7 +4,6 @@
 
 ### Frontend
 - React
-- Api Booking com
 
 ### Backend
 - Python
