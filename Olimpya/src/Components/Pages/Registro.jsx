@@ -6,6 +6,7 @@ const Registro = () => {
     <h3 className="mt-5">Registrarme</h3>
     <form>
       <input type="text" className='form-control m-3 inputForm mx-auto' placeholder=" Nombre y apellido"/>
+      <input type="text" className='form-control m-3 inputForm mx-auto' placeholder=" Teléfono"/>
       <input type="email" className='form-control m-3 inputForm mx-auto' placeholder=" Email"/>
       <input type="password" className='form-control m-3 inputForm mx-auto' placeholder=" Contraseña"/>
     </form>

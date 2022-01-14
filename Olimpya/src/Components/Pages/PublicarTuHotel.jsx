@@ -69,11 +69,11 @@ const PublicarTuHotel = () => {
         <hr/>
         <p>¿Ya habías empezado a registrarte?</p>
         <Link to="/login" className="text-decoration-none">
-        <button class="learn-more boton2">
-        <span class="circle" aria-hidden="true">
-        <span class="icon arrow"></span>
+        <button className="learn-more boton2">
+        <span className="circle" aria-hidden="true">
+        <span className="icon arrow"></span>
         </span>
-        <span class="button-text">Iniciar Sesión</span>
+        <span className="button-text">Iniciar Sesión</span>
      </button>
         </Link>
       </div>

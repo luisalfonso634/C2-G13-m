@@ -9,11 +9,11 @@ const Login = () => {
         <input type="password" className='form-control m-3 inputForm mx-auto' placeholder=" Contraseña"/>
       </form>
       <Link to="/perfilusuario">
-        <button class="learn-more boton2">
-        <span class="circle" aria-hidden="true">
-        <span class="icon arrow"></span>
+        <button className="learn-more boton2">
+        <span className="circle" aria-hidden="true">
+        <span className="icon arrow"></span>
         </span>
-        <span class="button-text">Iniciar Sesión</span>
+        <span className="button-text">Iniciar Sesión</span>
      </button>
       </Link>
       <div className="mb-3">
