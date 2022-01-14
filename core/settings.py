@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1',
                  'https://django-server-booking.herokuapp.com']
@@ -142,14 +142,15 @@ USE_TZ = True
 if "DYNO" in os.environ:
     STATIC_ROOT = 'static'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 STATIC_URL = '/static/'#location where django collect all static files
 STATIC_ROOT = os.path.join(BASE_DIR,'static')# location where you will store your static files
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'static/')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL = '/media/'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 AUTH_USER_MODEL = 'accounts.ExtendUser'
