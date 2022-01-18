@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import '../../Styles/botones.css';
 
 const Contacto = () => {
@@ -8,6 +7,7 @@ const Contacto = () => {
       <h3 className="mt-5">Contactanos</h3>
       <form>
         <input type="text" className="form-control m-3 inputForm mx-auto" placeholder=" Nombre y apellido"/>
+        <input type="number" className="form-control m-3 inputForm mx-auto" placeholder=" Teléfono"/>
         <input type="email" className="form-control m-3 inputForm mx-auto" placeholder=" Email"/>
         <textarea className="form-control m-3 inputForm mx-auto" placeholder=" Dejanos tu mensaje ..."/>
         <div className="d-flex justify-content-center">
@@ -22,11 +22,6 @@ const Contacto = () => {
   </div>
   <span>Enviar</span>
 </button>
-</div>
-<div className="d-flex justify-content-start">
-  <Link to="/publicatuhotel" className="text-decoration-none">
-  <button className="boton">Publica con nosotros</button>
-  </Link>
 </div>
       </form>
     </div>

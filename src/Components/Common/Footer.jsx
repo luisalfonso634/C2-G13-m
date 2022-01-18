@@ -17,15 +17,9 @@ const Footer = () => {
         <div className="col text-center">
           <ul className="list-unstyled">
             <h4>Categorias</h4>
-            <Link to="/" className="text-decoration-none text-white">Viajes</Link>
-            <br />
-            <Link to="/" className="text-decoration-none text-white">Hoteles</Link>
-            <br />
             <Link to="/" className="text-decoration-none text-white">Turismo</Link>
             <br />
             <Link to="/" className="text-decoration-none text-white">Combos</Link>
-            <br />
-            <Link to="/publicatuhotel" className="text-decoration-none text-white">Publica tu Hotel con nosotros</Link>
           </ul>
         </div>
         <div className="col text-center">
@@ -65,7 +59,7 @@ const Footer = () => {
       </div>
     </div>
     <div className="container text-center">
-      <Link to="/" className="text-white text-decoration-none">&copy; {new Date().getFullYear()}  Copyright | Olimpya No-Country.</Link>
+      <Link to="/" className="text-white text-decoration-none">&copy; {new Date().getFullYear()}  Copyright | Equipo 13</Link>
     </div>
   </div>
   )

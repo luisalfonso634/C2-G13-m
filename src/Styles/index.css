@@ -13,7 +13,7 @@
  #AEFEFF; */
 
  :root {
-  --color1: RGB(#35858B);
+  --color1: RGB(#3e888d);
   --color2: RGB(#072227);
 }
 
@@ -43,6 +43,7 @@ body::-webkit-scrollbar-thumb {
   background: #072227;
   height: 15rem;
   width: 100%;
+  margin: 0 auto;
 }
 
 .inputForm{
@@ -73,14 +74,16 @@ padding: 1rem;
   height: 4rem;
 }
 
-.bgImg{
-  background: url('https://live.staticflickr.com/65535/49652994951_d039300443_b.jpg');
-  height: 25rem;
+.page-container{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+.wrap{
+  flex: 1;
+}
 
-
-.bgImg2{
-  background: url('https://www.sdccd.edu/about/departments-and-offices/communications-and-public-relations/newscenter/_thumbnails/2018/miramarnight5.jpg');
-  height: 20rem;
+.columnas{
+  flex-direction: column;
 }
