@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import SidebarUsuario from './SidebarUsuario';
 
 const NavbarUsuario = () => {
   return (
@@ -21,22 +20,29 @@ const NavbarUsuario = () => {
             <span className="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nombre del Usuario
             </span>
             <ul className="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-              <li><span className="dropdown-item" href="#"><i className="fas fa-file-download"></i> Mis Reservas</span></li>
+              <Link to="" className="text-decoration-none text-black">
+                <span className="dropdown-item" href="#"><i className="fas fa-file-download"></i> Mis Reservas</span>
+              </Link>
               <li><hr className="dropdown-divider" /></li>
-              <li><span className="dropdown-item" href="#"></span><i className="fas fa-star"></i> Favotiros</li>
+             <Link to="favoritos"  className="text-decoration-none text-black">
+                <span className="dropdown-item" href="#"></span><i className="fas fa-star"></i> Favotiros
+             </Link>
               <li><hr className="dropdown-divider" /></li>
-              <li><span className="dropdown-item" href="#"><i className="fas fa-address-card"></i> Perfil</span></li>
+              <Link to="perfil"  className="text-decoration-none text-black">
+                <span className="dropdown-item" href="#"><i className="fas fa-address-card"></i> Perfil</span>
+              </Link>
               <li><hr className="dropdown-divider" /></li>
-              <li><span className="dropdown-item" href="#"><i className="fas fa-cogs"></i> Configuración</span></li>
+              <Link  to="configuracion" className="text-decoration-none text-black">
+              <span className="dropdown-item" href="#"><i className="fas fa-cogs"></i> Configuración</span>
+              </Link>
               <li><hr className="dropdown-divider" /></li>
-            <Link to="/"><li><span className="dropdown-item" href="#"><i className="fas fa-sign-out-alt"></i> Salir</span></li>  </Link>
+            <Link to="/"  className="text-decoration-none text-black"><span className="dropdown-item" href="#"><i className="fas fa-sign-out-alt"></i> Salir</span></Link>
           </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-<SidebarUsuario/>
   </div>
   )
 }

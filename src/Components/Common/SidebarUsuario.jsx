@@ -1,21 +1,24 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const SidebarUsuario = () => {
   return (
     <div className="sidebar">
-                 <ul>
-                <li>
-                  <Link to="mis_reservas">
+      <div className="menu p-5">
+                  <NavLink to="" className="text-decoration-none text-white mb-3">
                   <i className="fas fa-file-download"></i> Mis Reservas
-                  </Link>
-                  </li>
-              <li><i className="fas fa-star"></i> Favotiros</li>
-              <li><i className="fas fa-address-card"></i> Perfil</li>
-              <li><i className="fas fa-cogs"></i> Configuración</li>
-              <Link to="/" className="text-decoration-none text-white">
-              <li><i className="fas fa-sign-out-alt"></i> Salir</li>
-              </Link>
-          </ul>
+                  </NavLink>
+                    <NavLink to="favoritos" className="text-decoration-none text-white mb-3">
+                    <i className="fas fa-star"></i> Favotiros</NavLink>
+                    <NavLink to="perfil" className="text-decoration-none text-white mb-3">
+                  <i className="fas fa-address-card"></i> Perfil</NavLink>
+                    <NavLink to="configuracion" className="text-decoration-none text-white mb-3">
+                  <i className="fas fa-cogs"></i> Configuración</NavLink>
+                  <div className="salir p-4">
+            <NavLink to="/" className="text-decoration-none text-white mb-3">
+              <i class="fas fa-reply-all"></i> Salir
+            </NavLink>
+          </div>
+      </div>
     </div>
   )
 }

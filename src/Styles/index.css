@@ -61,11 +61,11 @@ padding: 1rem;
   color: rgb(255, 255, 255);
 }
 
-.sidebar{
-    background-color: #35858B;
-    color: white;
-    height: 100vh;
-    width: 230px; 
+.sidebar {
+  background-color: #35858B;
+  color: white;
+  height: 100vh;
+  width: 14rem;
 }
 
 .contenedorBuscador{
@@ -85,5 +85,25 @@ padding: 1rem;
 }
 
 .columnas{
+  flex-direction: column;
+}
+
+.flex{
+  display: flex;
+}
+
+.content{
+  width: 100%;
+}
+
+.menu {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.colPerfil{
+  display: flex;
   flex-direction: column;
 }

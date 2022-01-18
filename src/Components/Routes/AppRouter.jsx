@@ -2,7 +2,9 @@ import { Routes, Route } from 'react-router-dom';
 import DashboardRouter from './DashboardRouter';
 import PerfilUsuario from '../Pages/PerfilUsuario';
 import Inicio from '../Pages/Inicio';
-import MisReservas from '../Pages/PagesUsuario/MisReservas';
+import Favoritos from '../Pages/PagesUsuario/Favoritos';
+import Perfil from '../Pages/PagesUsuario/Perfil';
+import Configuracion from '../Pages/PagesUsuario/Configuracion';
 
 const AppRouter = () => {
   return (
@@ -10,7 +12,9 @@ const AppRouter = () => {
       <Routes>
         <Route path="perfilusuario" element={<PerfilUsuario />}>
         <Route index element={<Inicio />} />
-        <Route path="mis_reservas" element={<MisReservas/>}/>
+        <Route path="favoritos" element={<Favoritos/>}/>
+        <Route path="perfil" element={<Perfil/>}/>
+        <Route path="configuracion" element={<Configuracion/>}/>
         </Route>
         <Route path="/*" element={<DashboardRouter />}/>
       </Routes>
