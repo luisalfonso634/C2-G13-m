@@ -10,6 +10,7 @@ class Client(models.Model):
     # Client definition
     user = models.OneToOneField(ExtendUser, on_delete=models.CASCADE, primary_key=True)
     # Client Fields
+    phone = models.CharField(max_length=15)
 
 class SysAdmin(models.Model):
     user = models.OneToOneField(ExtendUser, on_delete=models.CASCADE, primary_key=True)

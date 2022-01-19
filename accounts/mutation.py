@@ -14,8 +14,8 @@ class RegisterClient(graphene.Mutation):
     """
     class Arguments:
       name = graphene.String()
-      surname = graphene.String()
       email = graphene.String()
+      phone = graphene.String()
       password1 = graphene.String()
       password2 = graphene.String()
 
@@ -37,6 +37,7 @@ class RegisterClient(graphene.Mutation):
         # Create client
          client = Client(
             user=user,
+            phone=user_data.get('phone'),
          )
          client.save()
          return RegisterClient(client=client, user=user)
