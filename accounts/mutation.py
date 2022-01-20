@@ -14,6 +14,7 @@ class RegisterClient(graphene.Mutation):
     """
     class Arguments:
       name = graphene.String()
+      surname = graphene.String()
       email = graphene.String()
       phone = graphene.String()
       password1 = graphene.String()
