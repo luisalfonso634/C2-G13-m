@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="row">
         <div className="col text-center">
           <Link to="/" className="text-decoration-none">
-          <h4 className="text-white">Olympia Group.</h4>
+          <h4 className="text-white">Hotel Olympia.</h4>
           </Link>
           <p>Tu lugar en el mundo.</p>
          <span><img src={favicon} alt="" style={{width:"80px"}}/></span>
@@ -17,9 +17,9 @@ const Footer = () => {
         <div className="col text-center">
           <ul className="list-unstyled">
             <h4>Categorias</h4>
-            <Link to="/" className="text-decoration-none text-white">Turismo</Link>
+            <Link to="alojamiento" className="text-decoration-none text-white">Alojamiento</Link>
             <br />
-            <Link to="/" className="text-decoration-none text-white">Combos</Link>
+            <Link to="atracciones_turisticas" className="text-decoration-none text-white">Atracciones Turísticas</Link>
           </ul>
         </div>
         <div className="col text-center">

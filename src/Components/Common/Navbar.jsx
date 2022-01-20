@@ -32,7 +32,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link to="/atracciones_turisticas" className="nav-link active text-white">
-                atracciones turísticas
+                Atracciones Turísticas
               </Link>
             </li>
             <li className="nav-item">
@@ -41,13 +41,11 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-            <ul className="ml-auto">
-            <li className="nav-item">
-              <Link to="login" className="nav-link text-white">
+            <div className="d-flex">
+              <Link to="login" className="text-decoration-none text-white">
                 Login
               </Link>
-            </li>
-            </ul>
+            </div>
         </div>
       </div>
     </nav>
