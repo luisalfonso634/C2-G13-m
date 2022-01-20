@@ -119,6 +119,7 @@ padding: 1rem;
 
 .titulos{
   background: #072227;
+  height: 80px;
   color: rgb(255, 255, 255);
   display: flex;
   align-items: center;

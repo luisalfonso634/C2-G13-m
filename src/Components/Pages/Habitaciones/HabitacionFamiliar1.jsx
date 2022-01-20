@@ -9,7 +9,10 @@ const HabitacionFamiliar1 = () => {
   <img src={familiar1} className="card-img-top imgbed" alt="" />
        </div>
   <div className="card-body">
+    <div className="d-flex">
     <h5 className="card-title text-center">Habitacion Familiar Premium</h5>
+    <i className="far fa-heart"></i>
+    </div>
     <h6 className="text-center">Comodidades:</h6>
     <i className="fas fa-wifi"></i> Internet de alta velocidad free.
     <i className="fas fa-tshirt"></i> Servicio de lavanderia.
