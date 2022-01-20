@@ -35,7 +35,7 @@ export const queryRegisterClient = gql`
         id
         firstName
         lastName
-        is_client
+        isClient
       }
     }
   }

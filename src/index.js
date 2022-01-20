@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './Styles/index.css';
+import UserContextProvider from '././context/UserContext/index.js';
 import App from './App';
 import {
   ApolloClient,
@@ -19,7 +20,9 @@ const client = new ApolloClient({
 ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-      <App />
+      <UserContextProvider>
+        <App />
+      </UserContextProvider>
     </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
+import { useContext } from "react";
+import { UserContext } from "./../../context/UserContext";
 
 const NavbarUsuario = () => {
+  const { setIsLogged, setUserId } = useContext(UserContext)
   return (
     <div>
     <nav className="navbar navbar-expand-lg navbar-light NavUsuario">
@@ -17,7 +20,7 @@ const NavbarUsuario = () => {
             </ul>
           <ul  className="navbar-nav ml-auto mb-2 mb-lg-0">
           <li className="nav-item dropdown">
-            <span className="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nombre del Usuario
+            <span className="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{JSON.parse(localStorage.getItem("user")).name}
             </span>
             <ul className="dropdown-menu text-center" aria-labelledby="navbarDropdown">
               <Link to="" className="text-decoration-none text-black">
@@ -36,7 +39,16 @@ const NavbarUsuario = () => {
               <span className="dropdown-item" href="#"><i className="fas fa-cogs"></i> Configuración</span>
               </Link>
               <li><hr className="dropdown-divider" /></li>
-            <Link to="/"  className="text-decoration-none text-black"><span className="dropdown-item" href="#"><i className="fas fa-sign-out-alt"></i> Salir</span></Link>
+            <Link to="/"  className="text-decoration-none text-black">
+              <span className="dropdown-item" href="#"
+                   onClick={() => {
+                    localStorage.removeItem("token")
+                    localStorage.removeItem("user")
+                    localStorage.removeItem("userId")
+                    localStorage.removeItem("userRegister")
+                    setIsLogged(false)
+                    setUserId("")}}> 
+                <i className="fas fa-sign-out-alt"></i> Salir</span></Link>
           </ul>
           </li>
         </ul>

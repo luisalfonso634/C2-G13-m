@@ -40,32 +40,32 @@ const Buscador = () => {
         <Link to="">Más info</Link>
       </div>
       <br />
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card">
-            <div class="card-body bgImg">
+      <div className="row">
+        <div className="col-sm-6">
+          <div className="card">
+            <div className="card-body bgImg">
               <br/>
               <br/>
-              <h5 class="card-title m-5 text-white">Miramar</h5>
-              <p class="card-text text-white">
+              <h5 className="card-title m-5 text-white">Miramar</h5>
+              <p className="card-text text-white">
                 218 Alojamientos
               </p>
-              <a href="#" class="btn btn-success">
+              <a href="#" className="btn btn-success">
                 Reservar
               </a>
             </div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <div class="card">
+        <div className="col-sm-6">
+          <div className="card">
             <div className="card-body bgImg">
             <br/>
               <br/>
-              <h5 class="card-title m-5 text-white">Santa Teresita</h5>
-              <p class="card-text text-white">
+              <h5 className="card-title m-5 text-white">Santa Teresita</h5>
+              <p className="card-text text-white">
                106 Alojamientos
               </p>
-              <a href="#" class="btn btn-success">
+              <a href="#" className="btn btn-success">
               Reservar
               </a>
             </div>
@@ -73,26 +73,26 @@ const Buscador = () => {
         </div>
       </div>
       <br/>
-      <div class="card-group text-white">
-  <div class="card">
-    <div class="card-body bgImg2">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <div className="card-group text-white">
+  <div className="card">
+    <div className="card-body bgImg2">
+      <h5 className="card-title">Card title</h5>
+      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  <div class="card">
-    <div class="card-body bgImg2">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <div className="card">
+    <div className="card-body bgImg2">
+      <h5 className="card-title">Card title</h5>
+      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  <div class="card">
-    <div class="card-body bgImg2">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  <div className="card">
+    <div className="card-body bgImg2">
+      <h5 className="card-title">Card title</h5>
+      <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
 </div>
@@ -100,57 +100,57 @@ const Buscador = () => {
 <p>Busca por tipo de alojamiento</p>
 <div className="row">
 
-  <div class="col">
-    <div class="card">
-      <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/160/160310270.jpg" class="card-img-top" alt="..."/>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  <div className="col">
+    <div className="card">
+      <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/160/160310270.jpg" className="card-img-top" alt="..."/>
+      <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="card">
-    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/160/160310270.jpg" class="card-img-top" alt="..."/>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  <div className="col">
+    <div className="card">
+    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/160/160310270.jpg" className="card-img-top" alt="..."/>
+      <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="card">
-    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/160/160310270.jpg" class="card-img-top" alt="..."/>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  <div className="col">
+    <div className="card">
+    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/160/160310270.jpg" className="card-img-top" alt="..."/>
+      <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="card">
-    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/160/160310270.jpg" class="card-img-top" alt="..."/>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  <div className="col">
+    <div className="card">
+    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/160/160310270.jpg" className="card-img-top" alt="..."/>
+      <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="card">
-    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/160/160310270.jpg" class="card-img-top" alt="..."/>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  <div className="col">
+    <div className="card">
+    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/160/160310270.jpg" className="card-img-top" alt="..."/>
+      <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="card">
-    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/160/160310270.jpg" class="card-img-top" alt="..."/>
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+  <div className="col">
+    <div className="card">
+    <img src="https://r-cf.bstatic.com/images/hotel/max1024x768/160/160310270.jpg" className="card-img-top" alt="..."/>
+      <div className="card-body">
+        <h5 className="card-title">Card title</h5>
+        <p className="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
@@ -158,11 +158,11 @@ const Buscador = () => {
   <p>Descubre Argentina</p>
   <br/>
   <div className="row">
-  <div class="card text-dark bg-light mb-3">
-  <div class="card-header">Header</div>
-  <div class="card-body">
-    <h5 class="card-title">Light card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div className="card text-dark bg-light mb-3">
+  <div className="card-header">Header</div>
+  <div className="card-body">
+    <h5 className="card-title">Light card title</h5>
+    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
 </div>
   </div>

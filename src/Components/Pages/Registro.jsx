@@ -1,5 +1,5 @@
 import { Formik, Form, Field } from "formik";
-import { Helmet } from "react-helmet";
+//import { Helmet } from "react-helmet-async";
 import { useNavigate } from 'react-router-dom';
 import { useContext, useEffect } from "react";
 import { UserContext } from "./../../context/UserContext";
@@ -35,15 +35,15 @@ export default function Registro() {
     setUserId(id)
     setIsLogged(true)
     navigate(newLocation)
-  }, [result.data])
+  }, [navigate, newLocation, result.data, 
+    result.loading, setIsLogged, setUserId])
   return (
-    <>
+    <>{/*
       <Helmet>
         <title>Register</title>
         <meta name="description" content="Register in our platform" />
-      </Helmet>
+    </Helmet> */}
       <section className="Register">
-        <h1>Register</h1>
         <Formik
           initialValues={{
             email: "",
@@ -84,22 +84,22 @@ export default function Registro() {
             <div className="container text-center">
               <h3 className="mt-5">Registrarme</h3>
               <Form>
-                <Field type="text" className='form-control m-3 inputForm mx-auto' placeholder=" Nombre" />
-                <Field type="text" className='form-control m-3 inputForm mx-auto' placeholder=" Apellido" />
-                <Field type="text" className='form-control m-3 inputForm mx-auto' placeholder=" Teléfono" />
-                <Field type="email" className='form-control m-3 inputForm mx-auto' placeholder=" Email" />
-                <Field type="password" className='form-control m-3 inputForm mx-auto' placeholder=" Contraseña" />
-                <Field type="password" className='form-control m-3 inputForm mx-auto' placeholder=" Repeti tu Contraseña" />
-                <Link to="/perfilusuario">
-                  <button class="learn-more boton2">
-                    <span class="circle" aria-hidden="true">
-                      <span class="icon arrow"></span>
+                <Field name="name" type="text" className='form-control m-3 inputForm mx-auto' placeholder=" Nombre" />
+                <Field name="surname" type="text" className='form-control m-3 inputForm mx-auto' placeholder=" Apellido" />
+                <Field name="phone" type="text" className='form-control m-3 inputForm mx-auto' placeholder=" Teléfono" />
+                <Field name="email" type="email" className='form-control m-3 inputForm mx-auto' placeholder=" Email" />
+                <Field name="password" type="password" className='form-control m-3 inputForm mx-auto' placeholder=" Contraseña" />
+                <Field name="passwordConfirmation" type="password" className='form-control m-3 inputForm mx-auto' placeholder=" Repeti tu Contraseña" />
+                  <button type="submit" className="learn-more boton2">
+                    <span className="circle" aria-hidden="true">
+                      <span className="icon arrow"></span>
                     </span>
-                    <span class="button-text">Registrarme</span>
+                    <span className="button-text">Registrarme</span>
                   </button>
-                </Link>
+                  {console.log(errors)}             
               </Form>
-              <br />
+              <br/>
+              <br/>
               <div className="d-flex justify-content-center">
                 <Link to="/login" className="text-decoration-none">
                   <button className="boton">¿Tienes cuenta? Inicia Sesión</button>
