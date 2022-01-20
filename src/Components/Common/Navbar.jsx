@@ -40,12 +40,16 @@ const Navbar = () => {
                 Contacto
               </Link>
             </li>
-          </ul>
-            <div className="d-flex">
-              <Link to="login" className="text-decoration-none text-white">
+            <li className="nav-item">
+              <Link to="login" className="nav-link active  text-white">
                 Login
               </Link>
-            </div>
+              </li>
+          </ul>
+          <form className="d-flex">
+  <input className="form-control me-2" type="search" placeholder="" aria-label="Search" />
+  <button className="btn btn-success" type="submit">Buscar</button>
+</form>
         </div>
       </div>
     </nav>
