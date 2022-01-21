@@ -24,7 +24,7 @@ const AppRouter = () => {
 
 export default AppRouter;
 
-{/* <Route path="appHomebanking" element={<AppHomebanking />}>
+/*{ <Route path="appHomebanking" element={<AppHomebanking />}>
 <Route index element={<Inicio />} />
 <Route path="actividad" element={<Actividad />} />
 <Route path="saldo" element={<Saldo />} />
@@ -34,4 +34,4 @@ export default AppRouter;
 <Route path="cuentas" element={<Cuentas />} />
 <Route path="movimientos" element={<Movimientos />} />
 <Route path="enviar_dinero" element={<EnviarDinero />} />
-</Route> */}
+</Route> }*/
