@@ -10,6 +10,7 @@ const Alojamiento = () => {
         <br/>
           De la propiedad:
           <br/>
+          <br/>
           <i className="fas fa-parking"></i> Parki gratis.
           <br/>
           <i className="fas fa-wifi"></i> Internet de alta velocidad free.
@@ -23,10 +24,10 @@ const Alojamiento = () => {
           <i className="fas fa-share-alt"></i> Salón de usos compartidos SUM.
           <br/>
           <i className="fas fa-tshirt"></i> Servicio de lavanderia y planchado.
-        </div>
-        <div className="col">
+          <br/>
           <br/>
         características de las habitaciones:
+      <br/>
       <br/>
       <i className="fas fa-bed"></i> Camas amplias.
       <br/>

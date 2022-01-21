@@ -41,15 +41,11 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="login" className="nav-link active  text-white">
+              <Link to="login" className="nav-link active text-white">
                 Login
               </Link>
               </li>
           </ul>
-          <form className="d-flex">
-  <input className="form-control me-2" type="text" placeholder="" aria-label="Search" />
-  <button className="btn btn-success" type="submit">Buscar</button>
-</form>
         </div>
       </div>
     </nav>

@@ -87,8 +87,9 @@ const Home = () => {
 
   const renderCard = (card, index) =>{
     return(
-    <Card style={{ width: '16rem' }} key={index} className="box">
-  <Card.Img variant="top" src={card.image} />
+      <div className="">
+    <Card style={{ width: '16rem' }} key={index} className="row mb-3">
+  <Card.Img variant="top p-2" src={card.image} />
   <Card.Body>
     <Card.Title className="text-center">{card.title}</Card.Title>
         { id ? card.id : ""}
@@ -115,16 +116,17 @@ const Home = () => {
     </div>
   </Card.Body>
 </Card>
+      </div>
     )
   }
-
 
 return(
   <>      
       <ModalReserva/>
+            <br/>
           <div className="container">
             <div className="row">
-        <div className="grid col-4">
+        <div className="col">
           {cardInfo.map(renderCard)}
         </div>
             </div>
