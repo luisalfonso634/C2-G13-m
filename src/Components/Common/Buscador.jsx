@@ -1,11 +1,7 @@
 import React from 'react';
 
 const Buscador = () => {
-<<<<<<< HEAD
-  return <div>
-    
-  </div>;
-=======
+
   return (
     <>
       <div className="contenedorBuscador d-flex align-items-center">
@@ -174,7 +170,6 @@ const Buscador = () => {
 </div>
     </>
   );
->>>>>>> frontEnd-jj
 };
 
 export default Buscador;
