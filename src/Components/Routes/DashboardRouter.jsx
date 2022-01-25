@@ -6,7 +6,6 @@ import Contacto from '../Pages/Contacto';
 import Login from '../Pages/Login';
 import Registro from '../Pages/Registro';
 import Alojamiento from '../Pages/Alojamiento';
-import AtraccionesTuristicas from '../Pages/AtraccionesTuristicas';
 import Error404 from '../Pages/Error404';
 
 const DashboardRouter = () => {
@@ -21,7 +20,6 @@ const DashboardRouter = () => {
       <Route path="login" element={<Login/>}/>
       <Route path="registro" element={<Registro />}/>
       <Route path="alojamiento" element={<Alojamiento/>}/>
-      <Route path="atracciones_turisticas" element={<AtraccionesTuristicas/>}/>
       <Route path="*" element={<Error404 />} />
     </Routes>
     </div>

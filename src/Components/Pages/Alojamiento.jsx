@@ -1,15 +1,14 @@
-import React from 'react'
 
 const Alojamiento = () => {
   return (
     <div className="container text-center">
       <br/>
+      <br/>
+      <br/>
       <h3>Nuestras Comodidades</h3>
       <div className="row">
         <div className="col columnas">
-        <br/>
           De la propiedad:
-          <br/>
           <br/>
           <i className="fas fa-parking"></i> Parki gratis.
           <br/>
@@ -26,8 +25,7 @@ const Alojamiento = () => {
           <i className="fas fa-tshirt"></i> Servicio de lavanderia y planchado.
           <br/>
           <br/>
-        características de las habitaciones:
-      <br/>
+        Características de las habitaciones:
       <br/>
       <i className="fas fa-bed"></i> Camas amplias.
       <br/>

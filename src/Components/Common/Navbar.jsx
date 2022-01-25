@@ -31,11 +31,6 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/atracciones_turisticas" className="nav-link active text-white">
-                Atracciones Turísticas
-              </Link>
-            </li>
-            <li className="nav-item">
               <Link to="contacto" className="nav-link active text-white">
                 Contacto
               </Link>

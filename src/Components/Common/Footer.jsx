@@ -15,14 +15,6 @@ const Footer = () => {
          <span><img src={favicon} alt="" style={{width:"80px"}}/></span>
         </div>
         <div className="col text-center">
-          <ul className="list-unstyled">
-            <h4>Categorias</h4>
-            <Link to="alojamiento" className="text-decoration-none text-white">Alojamiento</Link>
-            <br />
-            <Link to="atracciones_turisticas" className="text-decoration-none text-white">Atracciones Turísticas</Link>
-          </ul>
-        </div>
-        <div className="col text-center">
           <h4 className="text-white">Contacto</h4>
           <ul className="list-unstyled">
             <li className="text-white">

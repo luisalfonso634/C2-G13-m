@@ -126,3 +126,7 @@ padding: 1rem;
   justify-content: center;
 }
 
+.contenedorCard{
+  display: grid;
+  border: 1px solid black;
+}

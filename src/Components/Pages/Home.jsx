@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ModalReserva from '../Common/ModalReserva';
 import { Card } from 'react-bootstrap';
+import ModalReserva from '../Common/ModalReserva';
 
 const Home = () => {
 
@@ -72,13 +72,13 @@ const Home = () => {
      precio: "Precio por noche $9.000"},
     {id:"68742", 
     image: "https://i.ibb.co/KqLtjwf/familiar3.jpg", 
-    title: "Habitacion Familiar Retro", 
+    title: "Habitacion Familiar Retro Pro", 
     text: "lorem", in:"Checkin 10Hs", 
     out:"Checkout 17Hs",
     precio: "Precio por noche $8.500"},
     {id:"59874", 
     image: "https://i.ibb.co/P4R3tnm/familiar4.jpg", 
-    title: "Habitacion Familiar Mint",
+    title: "Habitacion Familiar Pro Mint",
     text: "lorem", 
     in:"Checkin 09Hs", 
     out:"Checkout 20Hs", 
@@ -87,14 +87,13 @@ const Home = () => {
 
   const renderCard = (card, index) =>{
     return(
-      <div className="">
-    <Card style={{ width: '16rem' }} key={index} className="row mb-3">
-  <Card.Img variant="top p-2" src={card.image} />
+      <div className="col">
+  <Card style={{ width: '14rem' }} key={index} >
+  <Card.Img variant="top p-2" src={card.image} style={{ width: '250px', height: '150px'}} />
   <Card.Body>
-    <Card.Title className="text-center">{card.title}</Card.Title>
+    <Card.Text className="text-center">{card.title}</Card.Text>
         { id ? card.id : ""}
     <Card.Text>
-     {card.text}
      <h6 className="text-center">Comodidades:</h6>
     <span><i className="fas fa-wifi"></i> Internet Fast Free.</span>
     <br/>
@@ -105,8 +104,10 @@ const Home = () => {
       <span><i className="fas fa-play-circle"></i> Tv plana de 32" full hd.</span>
       <br/>
       <span><i className="fas fa-broom"></i> Limpieza diaria.</span>
-      <div className="d-flex justify-content-btween">
-      {card.in} {card.out}
+      <div className="text-center">
+      {card.in} 
+      <br/>
+      {card.out}
       </div>
     </Card.Text>
     <div className="d-flex justify-content-center">
@@ -116,6 +117,7 @@ const Home = () => {
     </div>
   </Card.Body>
 </Card>
+<br/>
       </div>
     )
   }
@@ -126,15 +128,13 @@ return(
             <br/>
           <div className="container">
             <div className="row">
-        <div className="col">
           {cardInfo.map(renderCard)}
-        </div>
             </div>
             <br/>
             <div className="alert alert-success" role="alert">
         Consigue la información que necesitas. Consulta las últimas
         restricciones por la COVID-19 antes de viajar.
-        <Link to="/">Más info</Link>
+        <Link to="/"> Más info</Link>
       </div>
           </div>
           </>
