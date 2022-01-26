@@ -3,12 +3,16 @@ from graphql_auth import mutations
 from graphql_auth.schema import UserQuery, MeQuery
 from django.contrib.auth import get_user_model
 from graphene_django import DjangoListField
+# accounts
 from accounts.mutation import RegisterClient, RegisterSysAdmin
+# booking
+from booking.models import Room
 from booking.mutation import CreateBooking
-
+from booking.query import RoomType
 User = get_user_model()
 
 # Include all classes
+
 class AuthMutation(graphene.ObjectType):
     register = mutations.Register.Field()
     verify_account = mutations.VerifyAccount.Field()
@@ -21,11 +25,18 @@ class AuthMutation(graphene.ObjectType):
     registerclient = RegisterClient.Field()
     registersysadmin = RegisterSysAdmin.Field()
     createbooking = CreateBooking.Field()
-    
+
+
 class Query(UserQuery, MeQuery, graphene.ObjectType):
-    pass
+    # Rooms filters
+    allrooms = DjangoListField(RoomType)
+    
+   # Resolve rooms
+    def resolve_allrooms(self, info):
+      return Room.objects.all()
 
 class Mutation(AuthMutation, graphene.ObjectType):
     pass
+
 
 schema = graphene.Schema(query=Query, mutation=Mutation)

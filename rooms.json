@@ -1,0 +1,146 @@
+[
+    {
+        "pk": 1,
+        "model": "booking.room",
+        "fields": {
+            "image": "https://i.ibb.co/pJF6Z5v/habitacion-Matrimonial.jpg",
+            "title": "Habitacion Matrimonial Classic",
+            "text": "lorem",
+            "_in": "Checkin 09Hs",
+            "_out": "Checkout 20Hs",
+            "price": "Precio por noche $6.000"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "booking.room",
+        "fields": {
+            "image": "https://i.ibb.co/NxXPBqf/premium-Bed.jpg",
+            "title": "Habitacion Matrimonial Premium",
+            "text": "lorem",
+            "_in": "Checkin 10Hs",
+            "_out": "Checkout 21Hs",
+            "price": "Precio por noche $4.500"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "booking.room",
+        "fields": {
+            "image": "https://i.ibb.co/n86YxWg/habitacion-Matrimonial2.jpg",
+            "title": "Habitacion Matrimonial Love",
+            "text": "lorem",
+            "_in": "Checkin 08Hs",
+            "_out": "Checkout 19Hs",
+            "price": "Precio por noche $3.500"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "booking.room",
+        "fields": {
+            "image": "https://i.ibb.co/BVc5yyT/habitacion-Matrimonial3.jpg",
+            "title": "Habitacion Matrimonial Vintage",
+            "text": "lorem",
+            "_in": "Checkin 09Hs",
+            "_out": "Checkout 20Hs",
+            "price": "Precio por noche $2.500"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "booking.room",
+        "fields": {
+            "image": "https://i.ibb.co/Mp0prpd/hab-Individual.jpg",
+            "title": "Habitacion Individual Single",
+            "text": "lorem",
+            "_in": "Checkin 07Hs",
+            "_out": "Checkout 18Hs",
+            "price": "Precio por noche $2.000"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "booking.room",
+        "fields": {
+            "image": "https://i.ibb.co/8NXTWS1/hab-Individual2.jpg",
+            "title": "Habitacion Individual Classic",
+            "text": "lorem",
+            "_in": "Checkin 11Hs",
+            "_out": "Checkout 21Hs",
+            "price": "Precio por noche $3.500"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "booking.room",
+        "fields": {
+            "image": "https://i.ibb.co/M9rHLMQ/hab-Individual3.jpg",
+            "title": "Habitacion Individual Red & White",
+            "text": "lorem",
+            "_in": "Checkin 08Hs",
+            "_out": "Checkout 17Hs",
+            "price": "Precio por noche $5.000"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "booking.room",
+        "fields": {
+            "image": "https://i.ibb.co/3TX3QLt/hab-Individual4.jpg",
+            "title": "Habitacion Individual Stack",
+            "text": "lorem",
+            "_in": "Checkin 06Hs",
+            "_out": "Checkout 19Hs",
+            "price": "Precio por noche $8.000"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "booking.room",
+        "fields": {
+            "image": "https://i.ibb.co/SnqS3wZ/familiar1.jpg",
+            "title": "Habitacion Familiar Premium",
+            "text": "lorem",
+            "_in": "Checkin 09Hs",
+            "_out": "Checkout 20Hs",
+            "price": "Precio por noche $8.500"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "booking.room",
+        "fields": {
+            "image": "https://i.ibb.co/2Ygbv5G/familiar2.jpg",
+            "title": "Habitacion Familiar Confort",
+            "text": "lorem",
+            "_in": "Checkin 10Hs",
+            "_out": "Checkout 21Hs",
+            "price": "Precio por noche $9.000"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "booking.room",
+        "fields": {
+            "image": "https://i.ibb.co/KqLtjwf/familiar3.jpg",
+            "title": "Habitacion Familiar Retro Pro",
+            "text": "lorem",
+            "_in": "Checkin 10Hs",
+            "_out": "Checkout 17Hs",
+            "price": "Precio por noche $8.500"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "booking.room",
+        "fields": {
+            "image": "https://i.ibb.co/P4R3tnm/familiar4.jpg",
+            "title": "Habitacion Familiar Pro Mint",
+            "text": "lorem",
+            "_in": "Checkin 09Hs",
+            "_out": "Checkout 20Hs",
+            "price": "Precio por noche $4.000"
+        }
+    }
+]
