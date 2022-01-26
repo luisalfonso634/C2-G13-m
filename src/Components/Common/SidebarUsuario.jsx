@@ -7,13 +7,14 @@ const SidebarUsuario = () => {
   return (
     <div className="sidebar">
       <div className="menu p-5">
+        <div className="container text-capitalize">
+        <h4>Hola {JSON.parse(localStorage.getItem("user")).name}</h4>
+        </div>
                   <NavLink to="" className="text-decoration-none text-white mb-3">
                   <i className="fas fa-file-download"></i> Mis Reservas
                   </NavLink>
                     <NavLink to="favoritos" className="text-decoration-none text-white mb-3">
                     <i className="fas fa-star"></i> Favoritos</NavLink>
-                    <NavLink to="perfil" className="text-decoration-none text-white mb-3">
-                  <i className="fas fa-address-card"></i> Perfil</NavLink>
                     <NavLink to="configuracion" className="text-decoration-none text-white mb-3">
                   <i className="fas fa-cogs"></i> Configuración</NavLink>
                   <div className="salir p-4">

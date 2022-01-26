@@ -1,13 +1,13 @@
 import { Outlet } from 'react-router-dom';
 import NavbarUsuario from "../Common/NavbarUsuario";
-import SidebarUsuario from "../Common/SidebarUsuario";
+// import SidebarUsuario from "../Common/SidebarUsuario";
 
 const PerfilUsuario = () => {
   return (
     <>
       <NavbarUsuario/>
       <div className="flex">
-      <SidebarUsuario/>
+      {/* <SidebarUsuario/> */}
       <div className="content d-flex justify-content-center align-items-center">
       <Outlet/>
       </div>

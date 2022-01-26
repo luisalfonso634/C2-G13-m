@@ -2,7 +2,7 @@ import React from 'react'
 
 const Favoritos = () => {
   return (
-    <div>
+    <div className="d-flex justify-content-center m-3">
       favoritos
     </div>
   )
