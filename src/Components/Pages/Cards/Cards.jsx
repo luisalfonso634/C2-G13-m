@@ -170,9 +170,9 @@ const Cards = () => {
               <i className="fas fa-broom"></i> Limpieza diaria.
             </span>
             <div className="text-center">
-              {card.in}
+              {card.In}
               <br />
-              {card.out}
+              {card.Out}
               <div className="d-flex justify-content-center m-2">
                 <button
                   type="button"
