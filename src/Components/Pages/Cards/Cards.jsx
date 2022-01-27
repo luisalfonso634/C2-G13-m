@@ -1,119 +1,129 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useQuery } from "@apollo/client";
+import { queryAllRooms } from "../../../config/queries";
 import "./boton.css";
 
 const Cards = () => {
   const [id, setId] = useState(false);
+  const [cardInfo, setcardInfo] = useState([])
+  const { data, loading, errors } = useQuery(queryAllRooms)
 
-  const cardInfo = [
-    {
-      id: "25253",
-      image: "https://i.ibb.co/pJF6Z5v/habitacion-Matrimonial.jpg",
-      title: "Habitacion Matrimonial Classic",
-      text: "lorem",
-      in: "Checkin 09Hs",
-      out: "Checkout 20Hs",
-      precio: "Precio por noche $6.000",
-    },
-    {
-      id: "28795",
-      image: "https://i.ibb.co/NxXPBqf/premium-Bed.jpg",
-      title: "Habitacion Matrimonial Premium",
-      text: "lorem",
-      in: "Checkin 10Hs",
-      out: "Checkout 21Hs",
-      precio: "Precio por noche $4.500",
-    },
-    {
-      id: "45755",
-      image: "https://i.ibb.co/n86YxWg/habitacion-Matrimonial2.jpg",
-      title: "Habitacion Matrimonial Love",
-      text: "lorem",
-      in: "Checkin 08Hs",
-      out: "Checkout 19Hs",
-      precio: "Precio por noche $3.500",
-    },
-    {
-      id: "43872",
-      image: "https://i.ibb.co/BVc5yyT/habitacion-Matrimonial3.jpg",
-      title: "Habitacion Matrimonial Vintage",
-      text: "lorem",
-      in: "Checkin 09Hs",
-      out: "Checkout 20Hs",
-      precio: "Precio por noche $2.500",
-    },
-    {
-      id: "13456",
-      image: "https://i.ibb.co/Mp0prpd/hab-Individual.jpg",
-      title: "Habitacion Individual Single",
-      text: "lorem",
-      in: "Checkin 07Hs",
-      out: "Checkout 18Hs",
-      precio: "Precio por noche $2.000",
-    },
-    {
-      id: "65946",
-      image: "https://i.ibb.co/8NXTWS1/hab-Individual2.jpg",
-      title: "Habitacion Individual Classic",
-      text: "lorem",
-      in: "Checkin 11Hs",
-      out: "Checkout 21Hs",
-      precio: "Precio por noche $3.500",
-    },
-    {
-      id: "47319",
-      image: "https://i.ibb.co/M9rHLMQ/hab-Individual3.jpg",
-      title: "Habitacion Individual Red & White",
-      text: "lorem",
-      in: "Checkin 08Hs",
-      out: "Checkout 17Hs",
-      precio: "Precio por noche $5.000",
-    },
-    {
-      id: "93854",
-      image: "https://i.ibb.co/3TX3QLt/hab-Individual4.jpg",
-      title: "Habitacion Individual Stack",
-      text: "lorem",
-      in: "Checkin 06Hs",
-      out: "Checkout 19Hs",
-      precio: "Precio por noche $8.000",
-    },
-    {
-      id: "10279",
-      image: "https://i.ibb.co/SnqS3wZ/familiar1.jpg",
-      title: "Habitacion Familiar Premium",
-      text: "lorem",
-      in: "Checkin 09Hs",
-      out: "Checkout 20Hs",
-      precio: "Precio por noche $8.500",
-    },
-    {
-      id: "63987",
-      image: "https://i.ibb.co/2Ygbv5G/familiar2.jpg",
-      title: "Habitacion Familiar Confort",
-      text: "lorem",
-      in: "Checkin 10Hs",
-      out: "Checkout 21Hs",
-      precio: "Precio por noche $9.000",
-    },
-    {
-      id: "68742",
-      image: "https://i.ibb.co/KqLtjwf/familiar3.jpg",
-      title: "Habitacion Familiar Retro Pro",
-      text: "lorem",
-      in: "Checkin 10Hs",
-      out: "Checkout 17Hs",
-      precio: "Precio por noche $8.500",
-    },
-    {
-      id: "59874",
-      image: "https://i.ibb.co/P4R3tnm/familiar4.jpg",
-      title: "Habitacion Familiar Pro Mint",
-      text: "lorem",
-      in: "Checkin 09Hs",
-      out: "Checkout 20Hs",
-      precio: "Precio por noche $4.000",
-    },
-  ];
+  useEffect(() => {
+    if (loading) return
+    if (!data) return
+    setcardInfo(data.allrooms)
+  }, [loading, data])
+
+  /*  const cardInfo = [
+      {
+        id: "25253",
+        image: "https://i.ibb.co/pJF6Z5v/habitacion-Matrimonial.jpg",
+        title: "Habitacion Matrimonial Classic",
+        text: "lorem",
+        in: "Checkin 09Hs",
+        out: "Checkout 20Hs",
+        precio: "Precio por noche $6.000",
+      },
+      {
+        id: "28795",
+        image: "https://i.ibb.co/NxXPBqf/premium-Bed.jpg",
+        title: "Habitacion Matrimonial Premium",
+        text: "lorem",
+        in: "Checkin 10Hs",
+        out: "Checkout 21Hs",
+        precio: "Precio por noche $4.500",
+      },
+      {
+        id: "45755",
+        image: "https://i.ibb.co/n86YxWg/habitacion-Matrimonial2.jpg",
+        title: "Habitacion Matrimonial Love",
+        text: "lorem",
+        in: "Checkin 08Hs",
+        out: "Checkout 19Hs",
+        precio: "Precio por noche $3.500",
+      },
+      {
+        id: "43872",
+        image: "https://i.ibb.co/BVc5yyT/habitacion-Matrimonial3.jpg",
+        title: "Habitacion Matrimonial Vintage",
+        text: "lorem",
+        in: "Checkin 09Hs",
+        out: "Checkout 20Hs",
+        precio: "Precio por noche $2.500",
+      },
+      {
+        id: "13456",
+        image: "https://i.ibb.co/Mp0prpd/hab-Individual.jpg",
+        title: "Habitacion Individual Single",
+        text: "lorem",
+        in: "Checkin 07Hs",
+        out: "Checkout 18Hs",
+        precio: "Precio por noche $2.000",
+      },
+      {
+        id: "65946",
+        image: "https://i.ibb.co/8NXTWS1/hab-Individual2.jpg",
+        title: "Habitacion Individual Classic",
+        text: "lorem",
+        in: "Checkin 11Hs",
+        out: "Checkout 21Hs",
+        precio: "Precio por noche $3.500",
+      },
+      {
+        id: "47319",
+        image: "https://i.ibb.co/M9rHLMQ/hab-Individual3.jpg",
+        title: "Habitacion Individual Red & White",
+        text: "lorem",
+        in: "Checkin 08Hs",
+        out: "Checkout 17Hs",
+        precio: "Precio por noche $5.000",
+      },
+      {
+        id: "93854",
+        image: "https://i.ibb.co/3TX3QLt/hab-Individual4.jpg",
+        title: "Habitacion Individual Stack",
+        text: "lorem",
+        in: "Checkin 06Hs",
+        out: "Checkout 19Hs",
+        precio: "Precio por noche $8.000",
+      },
+      {
+        id: "10279",
+        image: "https://i.ibb.co/SnqS3wZ/familiar1.jpg",
+        title: "Habitacion Familiar Premium",
+        text: "lorem",
+        in: "Checkin 09Hs",
+        out: "Checkout 20Hs",
+        precio: "Precio por noche $8.500",
+      },
+      {
+        id: "63987",
+        image: "https://i.ibb.co/2Ygbv5G/familiar2.jpg",
+        title: "Habitacion Familiar Confort",
+        text: "lorem",
+        in: "Checkin 10Hs",
+        out: "Checkout 21Hs",
+        precio: "Precio por noche $9.000",
+      },
+      {
+        id: "68742",
+        image: "https://i.ibb.co/KqLtjwf/familiar3.jpg",
+        title: "Habitacion Familiar Retro Pro",
+        text: "lorem",
+        in: "Checkin 10Hs",
+        out: "Checkout 17Hs",
+        precio: "Precio por noche $8.500",
+      },
+      {
+        id: "59874",
+        image: "https://i.ibb.co/P4R3tnm/familiar4.jpg",
+        title: "Habitacion Familiar Pro Mint",
+        text: "lorem",
+        in: "Checkin 09Hs",
+        out: "Checkout 20Hs",
+        precio: "Precio por noche $4.000",
+      },
+    ];*/
 
   const renderCard = (card, index) => {
     return (

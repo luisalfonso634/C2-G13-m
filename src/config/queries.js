@@ -60,3 +60,17 @@ export const queryCreateAppointment = gql`
     }
   }
 `
+
+export const queryAllRooms = gql`
+{
+  allrooms{
+    id,
+    image,
+    title,
+    text,
+    In,
+    Out,
+    price
+	}
+}
+`
