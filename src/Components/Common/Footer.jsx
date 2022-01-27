@@ -11,7 +11,7 @@ const Footer = () => {
           <Link to="/" className="text-decoration-none">
           <h4 className="text-white">Hotel Olympia.</h4>
           </Link>
-          <p>Tu lugar en el mundo.</p>
+          <p>Tu lugar de descanso en el mundo.</p>
          <span><img src={favicon} alt="" style={{width:"80px"}}/></span>
         </div>
         <div className="col text-center">
@@ -40,7 +40,15 @@ const Footer = () => {
         <div className="col text-center">
           <h4 className="text-white">Sobre Nosotros</h4>
           <ul className="list-unstyled copy">
-            <Link to="/" className="text-decoration-none text-white">Sobre Nuestro Proyecto</Link>
+            <button
+                  type="button"
+                  class="btnReserva"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalProyecto"
+                  className="botones"
+                >
+              Sobre Nuestro Proyecto
+                </button>
             <br />
           <Link to="/" className="text-decoration-none text-white">Quienes Somos</Link>
             <br />

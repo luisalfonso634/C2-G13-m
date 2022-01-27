@@ -118,13 +118,13 @@ const Cards = () => {
   const renderCard = (card, index) => {
     return (
       <div className="col">
-        <div className="card m-2" style={{ width: "14rem" }} key={index}>
+        <div className="card m-2 border-0" style={{ width: "14rem" }} key={index}>
           <div className="card text-white">
             <img
               className="card-img-top img-fluid"
               alt=""
               src={card.image}
-              style={{ width: "250px", height: "150px" }}
+              style={{ width: "100%", height: "150px", border: "0px"}}
             />
             <div className="card-img-overlay d-flex justify-content-end">
               <button className="btnFav">
@@ -139,7 +139,8 @@ const Cards = () => {
           <div className="card-body">
             <h6 className="card-title text-center">{card.title}</h6>
             {id ? card.id : ""}
-            <h6 className="text-center">Comodidades:</h6>
+            <div className="text-center">
+            <h6>Comodidades:</h6>
             <span>
               <i className="fas fa-wifi"></i> Internet Fast Free.
             </span>
@@ -159,10 +160,11 @@ const Cards = () => {
             <span>
               <i className="fas fa-broom"></i> Limpieza diaria.
             </span>
-            <div className="text-center">
-              {card.in}
+            <br/>
+              {card.in}.
               <br />
-              {card.out}
+              {card.out}.
+                </div>
               <div className="d-flex justify-content-center m-2">
                 <button
                   type="button"
@@ -175,7 +177,6 @@ const Cards = () => {
                   <span class="label">Ver Más</span>
                 </button>
               </div>
-            </div>
           </div>
         </div>
       </div>
