@@ -22,7 +22,6 @@ const Perfil = () => {
     <span>Teléfono:</span>
     <br/>
     <span>Fecha de último inicio de sesión:</span>
-    <span className="text-center">Soporte</span>
       </div>
     </div>
     </div>

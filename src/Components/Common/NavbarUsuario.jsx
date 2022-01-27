@@ -29,10 +29,6 @@ const NavbarUsuario = () => {
                 <span className="dropdown-item" href="#"><i className="fas fa-address-card"></i> Perfil</span>
               </Link>
               <li><hr className="dropdown-divider" /></li>
-              <Link  to="configuracion" className="text-decoration-none text-black">
-              <span className="dropdown-item" href="#"><i className="fas fa-cogs"></i> Configuración</span>
-              </Link>
-              <li><hr className="dropdown-divider" /></li>
             <Link to="/"  className="text-decoration-none text-black">
               <span className="dropdown-item" href="#"
                    onClick={() => {

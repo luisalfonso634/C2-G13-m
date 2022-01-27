@@ -38,17 +38,11 @@ const Footer = () => {
           </ul>
         </div>
         <div className="col text-center">
-          <h4 className="text-white">Sobre Nosotros</h4>
+          <h4 className="text-white">Sobre Hotel Olimpya</h4>
           <ul className="list-unstyled copy">
-            <button
-                  type="button"
-                  class="btnReserva"
-                  data-bs-toggle="modal"
-                  data-bs-target="#modalProyecto"
-                  className="botones"
-                >
-              Sobre Nuestro Proyecto
-                </button>
+          <Link to="/" className="text-decoration-none text-white">
+              Donde estamos
+                </Link>
             <br />
           <Link to="/" className="text-decoration-none text-white">Quienes Somos</Link>
             <br />

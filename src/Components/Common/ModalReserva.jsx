@@ -2,7 +2,7 @@ const ModalReserva = () => {
   return (
     <div>
       <div
-        class="modal fade"
+        className="modal fade"
         id="staticBackdrop"
         data-bs-backdrop="static"
         data-bs-keyboard="false"
@@ -10,18 +10,18 @@ const ModalReserva = () => {
         aria-labelledby="staticBackdropLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-body">...</div>
-            <div class="modal-footer d-flex justify-content-between">
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-body">...</div>
+            <div className="modal-footer d-flex justify-content-between">
               <button
                 type="button"
-                class="btn btn-success"
+                className="btn btn-success"
                 data-bs-dismiss="modal"
               >
                 Cerrar
               </button>
-              <button type="button" class="btn btn-success">
+              <button type="button" className="btn btn-success">
                 Reservar
               </button>
             </div>
