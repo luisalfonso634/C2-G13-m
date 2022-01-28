@@ -75,5 +75,8 @@ Solución
 El Hotel Olimpya cuenta con todos los requerimientos y comodidades para cumplir con todas las espectativas de sus clientes.
 
 Authors
+
 Joan - backend
+
+
 Leandro - frontend
