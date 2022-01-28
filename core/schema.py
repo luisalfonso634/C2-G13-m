@@ -30,10 +30,14 @@ class AuthMutation(graphene.ObjectType):
 class Query(UserQuery, MeQuery, graphene.ObjectType):
     # Rooms filters
     allrooms = DjangoListField(RoomType)
-    
+    # Select a Room
+    searchroom = graphene.List(RoomType, id_room=graphene.Int())
    # Resolve rooms
     def resolve_allrooms(self, info):
       return Room.objects.all()
+    # Resolve search a room
+    def resolve_searchroom(self, info, id_room):
+      return Room.objects.filter(pk=id_room)
 
 class Mutation(AuthMutation, graphene.ObjectType):
     pass
