@@ -12,7 +12,6 @@ const Cards = () => {
     if (loading) return
     if (!data) return
     setcardInfo(data.allrooms)
-    console.log(data.allrooms)
   }, [loading, data])
 
   const renderCard = (card, index) => {

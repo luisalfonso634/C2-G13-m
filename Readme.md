@@ -72,7 +72,7 @@ Problema
 Con la poca disposición para vacacionar debido a la pandemia, no es facil conseguir un lugar tranquilo y con todos los requerimientos necesarios para poder alojarse.
 
 Solución
-El Hotel Olimpya cuenta con todos los requerimientos y 
+El Hotel Olimpya cuenta con todos los requerimientos y comodidades para cumplir con todas las espectativas de sus clientes.
 
 Authors
 Joan - backend
