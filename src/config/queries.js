@@ -74,3 +74,17 @@ export const queryAllRooms = gql`
 	}
 }
 `
+
+export const querySearchRoom = gql`
+  query findRoom($idRoom: Int) {
+    searchroom(idRoom: $idRoom) {
+      id,
+      image,
+      title,
+      text,
+      In,
+      Out,
+      price
+    }
+  }
+`

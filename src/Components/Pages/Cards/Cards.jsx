@@ -1,16 +1,31 @@
 import { useState, useEffect } from "react";
-import { useQuery } from "@apollo/client";
-import { queryAllRooms } from "../../../config/queries";
+import { useQuery, useLazyQuery } from "@apollo/client";
+import { queryAllRooms, querySearchRoom } from "../../../config/queries";
 import "./boton.css";
 
-const Cards = () => {
+const Cards = (props) => {
   const [id, setId] = useState(false);
   const [cardInfo, setcardInfo] = useState([])
   const { data, loading, errors } = useQuery(queryAllRooms)
+  const [searchRoom, { loadingroom, error, dataroom }] = useLazyQuery(querySearchRoom)
+
+
+  const handleChange = (e) => {
+    e.preventDefault();
+    let idmodal = parseInt(e.target.getAttribute("data-id"))
+    let promise = searchRoom({ variables: { idRoom: idmodal } })
+    props.onChange({
+      idmodal: idmodal,
+      roomdata: promise
+
+    })
+    console.log(promise)
+  }
 
   useEffect(() => {
     if (loading) return
     if (!data) return
+    //console.log(data.allrooms)
     setcardInfo(data.allrooms)
   }, [loading, data])
 
@@ -127,7 +142,7 @@ const Cards = () => {
 
   const renderCard = (card, index) => {
     return (
-      <div className="col">
+      <div key={index} className="col">
         <div className="card m-2" style={{ width: "14rem" }} key={index}>
           <div className="card text-white">
             <img
@@ -176,13 +191,15 @@ const Cards = () => {
               <div className="d-flex justify-content-center m-2">
                 <button
                   type="button"
-                  class="btnReserva"
+                  className="btnReserva"
+                  data-id={card.id}
                   data-bs-toggle="modal"
                   data-bs-target="#staticBackdrop"
+                  onClick={handleChange}
                 >
-                  <span class="transition"></span>
-                  <span class="gradient"></span>
-                  <span class="label">Ver Más</span>
+                  <span data-id={card.id} className="transition"></span>
+                  <span data-id={card.id} className="gradient"></span>
+                  <span data-id={card.id} className="label">Ver Más</span>
                 </button>
               </div>
             </div>
